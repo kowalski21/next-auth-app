@@ -37,18 +37,11 @@ export const useAuth = () => {
       }
     };
 
-    // asyncFunc();
-
     // setTimeout(showInfo, 10000);
     // setTimeout(asyncFunc, 1000);
     if (mounted) {
       asyncFunc();
     }
-
-    // return () => {
-    //   // setTimeout(asyncFunc);
-    //   asyncFunc;
-    // };
   }, []);
 
   return { user };

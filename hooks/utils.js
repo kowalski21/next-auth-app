@@ -9,10 +9,6 @@ export const useAuth = () => {
   const [user, setUser] = useState(null);
   const addUser = useAuthStore(selector);
 
-  const showInfo = () => {
-    console.log(`I am showing`);
-  };
-
   useEffect(() => {
     console.log("component has mounted");
     let mounted = true;
